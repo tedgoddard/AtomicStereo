@@ -34,9 +34,10 @@ $(document).ready(function() {
 var lastPrompt=0;
 
 window.addEventListener('orientationchange', function() {
+    var width = document.body.scrollWidth;
     var height = document.body.scrollHeight;
     $("#appdiv").children().first().height(height);
-    $("#appdiv").children().first().height(width * 2);
+    $("#appdiv").children().first().width(width);
     console.log("rotate");
 });
 
