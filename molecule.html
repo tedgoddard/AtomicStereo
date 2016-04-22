@@ -33,6 +33,13 @@ $(document).ready(function() {
 })
 var lastPrompt=0;
 
+window.addEventListener('orientationchange', function() {
+    var height = document.body.scrollHeight;
+    $("#appdiv").children().first().height(height);
+    $("#appdiv").children().first().height(width * 2);
+    console.log("rotate");
+});
+
 </script>
 <div id="appdiv"></div>
 </body>
