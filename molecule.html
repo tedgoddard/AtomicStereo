@@ -9,7 +9,7 @@
 Jmol._isAsync = false;
 var jmolApplet0; 
 jmol_isReady = function(applet) {
-    Jmol._getElement(applet, "appletdiv").style.border="1px solid orange"
+    Jmol._getElement(applet, "appletdiv").style.border="1px solid black"
 }		
 var Info = {
 	width: "600",
@@ -19,7 +19,7 @@ var Info = {
 	addSelectionOptions: true,
 	use: "HTML5",   // JAVA HTML5 WEBGL are all options
 	j2sPath: "./j2s", 
-	script: "set antialiasDisplay;load data/caffeine.mol; stereo ON; set stereoDegrees -5;",
+	script: "set antialiasDisplay;load data/caffeine.mol; stereo ON; set stereoDegrees 0;",
 	readyFunction: jmol_isReady,
 	disableJ2SLoadMonitor: true,
   disableInitialConsole: true,
